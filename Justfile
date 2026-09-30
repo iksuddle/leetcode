@@ -11,10 +11,10 @@ add number name:
     slug="${slug,,}"
 
     dir="src/leetcode/p{{number}}_${slug}"
+    package="p{{number}}_${slug}"
 
     mkdir -p "$dir"
-    touch "$dir/__init__.py"
     touch "$dir/solution.py"
-    printf 'from .solution import *\n' > "$dir/test_solution.py"
+    printf 'from leetcode.%s import solution\n' "$package" > "$dir/test_solution.py"
 
     echo "Created $dir"

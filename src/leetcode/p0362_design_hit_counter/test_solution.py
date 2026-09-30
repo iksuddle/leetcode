@@ -1,4 +1,4 @@
-from .solution import *
+from leetcode.p0362_design_hit_counter.solution import HitCounter
 
 
 def test_basic():
