@@ -34,7 +34,6 @@ This creates:
 
 ```text
 src/leetcode/p0362_design_hit_counter/
-├── __init__.py
 ├── solution.py
 └── test_solution.py
 ```
@@ -42,7 +41,7 @@ src/leetcode/p0362_design_hit_counter/
 `test_solution.py` is automatically initialized with:
 
 ```python
-from .solution import *
+from leetcode.p0362_design_hit_counter import solution
 ```
 
 ## Running Tests
