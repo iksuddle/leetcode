@@ -1,8 +1,8 @@
-from leetcode.p0362_design_hit_counter.solution import HitCounter
+from leetcode.p0362_design_hit_counter import solution
 
 
 def test_basic():
-    counter = HitCounter()
+    counter = solution.HitCounter()
 
     counter.hit(1)
     counter.hit(2)
@@ -17,7 +17,7 @@ def test_basic():
 
 
 def test_same_timestamp():
-    counter = HitCounter()
+    counter = solution.HitCounter()
 
     counter.hit(1)
     counter.hit(1)
@@ -29,7 +29,7 @@ def test_same_timestamp():
 
 
 def test_exact_300_second_boundary():
-    counter = HitCounter()
+    counter = solution.HitCounter()
 
     counter.hit(100)
 
@@ -38,7 +38,7 @@ def test_exact_300_second_boundary():
 
 
 def test_hits_on_boundary():
-    counter = HitCounter()
+    counter = solution.HitCounter()
 
     counter.hit(1)
     counter.hit(2)
@@ -55,7 +55,7 @@ def test_hits_on_boundary():
 
 
 def test_large_gap():
-    counter = HitCounter()
+    counter = solution.HitCounter()
 
     counter.hit(1)
     counter.hit(50)
@@ -68,7 +68,7 @@ def test_large_gap():
 
 
 def test_many_hits_same_and_different_times():
-    counter = HitCounter()
+    counter = solution.HitCounter()
 
     for _ in range(5):
         counter.hit(1)

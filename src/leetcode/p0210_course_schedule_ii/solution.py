@@ -36,5 +36,4 @@ class Solution:
             if check_cycle(c):
                 return []
 
-
         return result
